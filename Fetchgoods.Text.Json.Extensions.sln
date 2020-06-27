@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fetchgoods.Text.Json.Extensions", "Fetchgoods.Text.Json.Extensions\Fetchgoods.Text.Json.Extensions.csproj", "{21F7EBD1-3427-40A4-84E9-72A6FE627B37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fetchgoods.Text.Json.Extensions", "Fetchgoods.Text.Json.Extensions\Fetchgoods.Text.Json.Extensions.csproj", "{21F7EBD1-3427-40A4-84E9-72A6FE627B37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fetchgoods.Text.Json.Extensions.Tests", "Fetchgoods.Text.Json.Extensions.Tests\Fetchgoods.Text.Json.Extensions.Tests.csproj", "{DB682878-4B16-4541-BCA5-81F1CACE611E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{21F7EBD1-3427-40A4-84E9-72A6FE627B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21F7EBD1-3427-40A4-84E9-72A6FE627B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21F7EBD1-3427-40A4-84E9-72A6FE627B37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB682878-4B16-4541-BCA5-81F1CACE611E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB682878-4B16-4541-BCA5-81F1CACE611E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB682878-4B16-4541-BCA5-81F1CACE611E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB682878-4B16-4541-BCA5-81F1CACE611E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
