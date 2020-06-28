@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.0</Version>
+    <Authors>FetchGoods</Authors>
+    <Product />
+    <Company />
+    <Description>Provides convenience extension methods and configurable default settings for .Net Core's JsonSerializer</Description>
+    <Copyright>(c) 2018 by Trevor D. Reid. All rights reserved. Licensed under the MIT License. AS IS.</Copyright>
+    <RepositoryUrl>https://github.com/FetchGoods/Text.Json.Extensions.git</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
