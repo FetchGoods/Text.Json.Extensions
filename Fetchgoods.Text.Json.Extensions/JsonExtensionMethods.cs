@@ -10,8 +10,9 @@ namespace Fetchgoods.Text.Json.Extensions
         {
             DefaultOptions = new JsonSerializerOptions();
         }
-
-        public static T FromJson<T>(this string json)
+        
+        #region string Extensions
+        public static T FromJsonTo<T>(this string json)
         {
             return FromJson<T>(json, DefaultOptions);
         }
@@ -23,7 +24,11 @@ namespace Fetchgoods.Text.Json.Extensions
             return JsonSerializer.Deserialize<T>(json, options);
         }
 
-        public static string ToJson<T>(this T value)
+
+        #endregion
+
+        #region object extensions
+        public static string ToJson(this object value)
         {
             return ToJson<T>(value, DefaultOptions);
         }
@@ -32,5 +37,7 @@ namespace Fetchgoods.Text.Json.Extensions
         {
             return JsonSerializer.Serialize<T>(value, options);
         }
+
+        #endregion
     }
 }
