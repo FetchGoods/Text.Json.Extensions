@@ -14,12 +14,10 @@ namespace Fetchgoods.Text.Json.Extensions
         #region string Extensions
         public static T FromJsonTo<T>(this string json)
         {
-            return FromJson<T>(json, DefaultOptions);
+            return FromJsonTo<T>(json, DefaultOptions);
         }
 
-        public static T FromJson<T>(
-            this string json, 
-            JsonSerializerOptions options)
+        public static T FromJsonTo<T>(this string json, JsonSerializerOptions options)
         {
             return JsonSerializer.Deserialize<T>(json, options);
         }
@@ -30,14 +28,23 @@ namespace Fetchgoods.Text.Json.Extensions
         #region object extensions
         public static string ToJson(this object value)
         {
-            return ToJson<T>(value, DefaultOptions);
+            return ToJson(value, DefaultOptions);
         }
 
-        public static string ToJson<T>(this T value, JsonSerializerOptions options)
+        public static string ToJson(this object value, JsonSerializerOptions options)
+        {
+            return JsonSerializer.Serialize(value, options);
+        }
+
+        public static string ToJsonAs<T>(this T value, JsonSerializerOptions options)
         {
             return JsonSerializer.Serialize<T>(value, options);
         }
 
+        public static string ToJsonAs<T>(this T value)
+        {
+            return ToJsonAs<T>(value, DefaultOptions);
+        }
         #endregion
     }
 }
